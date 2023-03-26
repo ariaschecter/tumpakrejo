@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 701px) {
+    main{
+        margin-top: 30px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;                
+        width: 1028px;        
+    }
+    .tagline{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: #2C2C2C;        
+    }
+    .asset{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;        
+    }
+    .asset-sarana-prasarana{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 24px;        
+        width: 440px;
+        height: 460px;        
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;        
+    }
+    .name-asset{
+        width: 100%;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;        
+    }
+    .image-asset{
+        width: 440px;
+        height: 280px;
+    }
+    .image-asset img{
+        width: 100%;
+        height: 100%;
+    }
+    .description-asset{
+        width: 440px;
+        height: 100px;  
+        overflow: auto;      
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;        
+        color: #ABABAB;        
+    }
+    .description-asset::-webkit-scrollbar{
+      width: 3px;        
+  }
+  .description-asset::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: #b9d9f3; 
+    }
+  .description-asset::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      background: #277BC0;
+  }
+  .description-asset::-webkit-scrollbar-thumb:hover{
+      background: #0063b4;
+  }
+
+  }
+  @media screen and (max-width: 700px) {
+    main{            
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 24px;                
+      width: 280px;        
+    }    
+    .tagline{
+      text-align: center;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #2C2C2C;      
+    }
+    .asset{
+      display: grid;
+      grid-template-columns: auto;
+      gap: 24px; 
+    }
+    .asset-sarana-prasarana{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      gap: 12px;      
+      width: 260px;
+      height: 380px;      
+      background: #FFFFFF;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;      
+    }
+    .name-asset{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #2C2C2C;      
+    }
+    .image-asset{
+      width: 260px;
+      height: 260px;
+    }
+    .image-asset img{
+      width: 100%;
+      height: 100%;      
+    }
+    .description-asset{      
+      width: 260px;
+      height: 70px;      
+      overflow: auto;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;      
+      color: #ABABAB;      
+    }
+    .description-asset::-webkit-scrollbar{
+      width: 2.5px;        
+  }
+  .description-asset::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: #b9d9f3; 
+    }
+  .description-asset::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      background: #277BC0;
+  }
+  .description-asset::-webkit-scrollbar-thumb:hover{
+      background: #0063b4;
+  }
+
+  }

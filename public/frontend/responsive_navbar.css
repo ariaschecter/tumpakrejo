@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  font-family: 'Inter';
+  text-decoration: none;
+}
+p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .navigation{
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 336px;
+    }
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(39, 123, 192, 0.6);
+        backdrop-filter: blur(10px);
+        transition: 0.5s;     
+        display: flex;   
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+      
+      .overlay-content {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #FFFFFF;        
+        transition: 0.3s;
+      }  
+     
+    .sosmed{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    } 
+    .overlay {overflow-y: auto;}
+    .overlay .closebtn {
+    font-size: 40px;
+    position:fixed;
+    top: 20px;
+    right: 40px;
+    }
+    .subnav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .subnav{
+      overflow: hidden;
+  }
+  .subnavbtn{       
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 8px 16px;
+          background-color: inherit;
+          font-family: inherit;            
+          margin: 0;          
+    }
+    .subnav-content {
+      display: none;
+      position: absolute;
+      background-color: #2A5594;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      
+    }
+    .subnav-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;      
+    }      
+    .subnav-content a:hover {
+      font-size: 16px;  
+          border: none;
+          outline: none;
+          color: #2c2c2c;
+          padding: 8px 16px;
+          background-color:transparent;
+          font-family: inherit;            
+          margin: 0;              
+    }
+    
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+    .logo img{        
+        height: 32px;
+    }
+    .menu{                       
+        height: 16px;        
+    }
+}
+@media screen and (min-width: 701px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;      
+  }
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 106px;    
+    
+    width: 1028px;
+  }
+  .logo img{
+    height: 64px;
+  }
+  .overlay{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 150px;    
+  }
+  .menu img{
+    position: fixed;
+    z-index: -1;    
+    width: 0px;
+  }
+  .overlay .closebtn{
+    position: fixed;
+    z-index: -1;
+    width: 0px;
+    color: white;
+  }
+  .overlay-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;    
+  }
+  .overlay-content a{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;    
+    color: #1B3761;    
+  }
+  .overlay-content .active{
+    color: #2c2c2c;
+    font-weight: 500;
+  }
+  .subnav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subnav{
+    overflow: hidden;
+}
+.subnavbtn{       
+        font-size: 16px;  
+        line-height: 24px; 
+        font-weight: 300;
+        border: none;
+        outline: none;
+        color: #1B3761;        
+        background-color: inherit;
+        font-family: inherit;            
+        margin: 0;          
+  }
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #2A5594;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  .subnav-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;      
+  }      
+  .subnav-content a:hover {
+    font-size: 16px;  
+        border: none;
+        outline: none;
+        color: #2c2c2c;
+        padding: 8px 16px;
+        background-color:transparent;
+        font-family: inherit;            
+        margin: 0;              
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  .sosmed{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}

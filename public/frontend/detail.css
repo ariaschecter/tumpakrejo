@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    font-family: 'Inter';
+    text-decoration: none;
+  }
+  p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+time{
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: block;
+    line-height: 16px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 700px) {   
+    .content-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+        width: 360px;        
+    }
+    .tagline-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 12px;
+        gap: 6px;        
+    }
+    .name-tagline{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;        
+    }
+
+    .place-date{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;        
+        justify-content: center;
+        gap: 4px;        
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #ABABAB;        
+    }
+    
+    .hero-image {
+        width: 360px;
+        height: 250px;
+    }
+    .hero-image img{
+        width: 100%;
+        height: 250px;
+    }
+
+    main{
+        margin-top: 24px;        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;  
+        width: 280px;      
+    }
+    .about-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;        
+    }
+    .tagline-about-detail{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2C2C2C;        
+    }
+    .description-about-detail{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;        
+        color: #ABABAB;        
+    }
+    .content-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;        
+    }
+    .name-content-detail{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2C2C2C;           
+    }
+    .description-content-detail{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;        
+        color: #ABABAB;        
+    }
+    .image-content-detail{
+        width: 280px;
+        height: 240px;
+        
+    }
+    .image-content-detail img{
+        height: 240px;
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .extraculliculer-achievment{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;        
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;        
+    }
+    .list-extraculliculer-achievment{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 25px;
+    }
+    .list-extraculliculer-achievment figure{
+        width: 250px;
+        height: 250px;
+    }
+    .list-extraculliculer-achievment figure img{
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+    }
+    .extraculliculer-member{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;        
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;        
+    }
+    .list-extraculliculer-member{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 25px;
+    }
+    .list-extraculliculer-member figure{        
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 250px;
+        height: 350px;                
+        background-image: url(./image/background/background-member.png);
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .list-extraculliculer-member figure img{                
+        height: 250px;                        
+    }
+}
+@media screen and (min-width: 701px) {
+    .content-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 1028px;        
+    }
+    .tagline-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 6px;        
+    }
+    .name-tagline{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: #2C2C2C;        
+    }
+    .place-date{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;        
+        justify-content: center;
+        gap: 4px;        
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #ABABAB;        
+    }
+    .hero-image{
+        width: 1028px;
+        height: 500px;
+    }
+    .hero-image img{
+        width: 100%;
+        height: 500px;
+    }
+
+    main{
+        margin-top: 60px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+        width: 800px;        
+    }
+    .about-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;        
+    }
+    .tagline-about-detail{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;        
+    }
+    .description-about-detail{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;        
+        color: #ABABAB;        
+    }
+    .content-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 35px;        
+    }
+    .name-content-detail{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;        
+    }
+    .description-content-detail{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;        
+        color: #ABABAB;        
+    }
+    .image-content-detail{
+        width: 800px;
+        height: 400px;
+    }
+    .image-content-detail img{
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .extraculliculer-achievment{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;        
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;        
+    }
+    .list-extraculliculer-achievment{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 25px;
+    }
+    .list-extraculliculer-achievment figure{
+        width: 250px;
+        height: 250px;
+    }
+    .list-extraculliculer-achievment figure img{
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+    }
+    .extraculliculer-member{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;        
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;        
+    }
+    .list-extraculliculer-member{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 25px;
+    }
+    .list-extraculliculer-member figure{        
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 250px;
+        height: 350px;                
+        background-image: url(./image/background/background-member.png);
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .list-extraculliculer-member figure img{                
+        height: 250px;                        
+    }
+    
+
+}

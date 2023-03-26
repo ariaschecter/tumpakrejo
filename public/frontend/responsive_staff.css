@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 701px) {
+    main{
+        margin-top: 30px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 60px;                
+        width: 800px;        
+    }    
+    .staff{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;        
+        gap: 40px;   
+        padding: 0px;
+    }    
+    .content-staff{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 44px;        
+    }
+    .left-content{
+        display: flex;
+        flex-direction: column;                
+    }
+    .background-shape{        
+        width: 250px;
+        height: 350px;
+        background-color: #2A5594;
+        border-radius: 20px;        
+    }
+    .background-image{        
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 250px;
+        height: 350px;
+        background-image: url(./image/background/background-staff.png);
+        background-size: cover;
+        border-radius: 20px;
+        transform: translate(-15px, -15px);
+    }
+    .background-image img{
+        height: 300px;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .right-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;        
+        width: 486px;        
+    }
+    .text-staff{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;        
+    }
+    .motivation{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2C2C2C;        
+    }
+    .about-staff{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;        
+    }
+    .name-staff{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;        
+        color: #2C2C2C;        
+    }
+    .position-staff{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;        
+        color: #2C2C2C;        
+    }
+    span{
+        width: 486px;
+        border: 1px dashed #2A5594;
+    }
+    .description-staff{
+        height: 150px;
+        overflow: auto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;        
+        color: #2C2C2C;        
+    }
+    .description-staff::-webkit-scrollbar{
+        width: 5px;        
+    }
+    .description-staff::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: #b9d9f3; 
+      }
+    .description-staff::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background: #277BC0;
+    }
+    .description-staff::-webkit-scrollbar-thumb:hover{
+        background: #0063b4;
+    }
+
+  }
+  @media screen and (max-width: 700px) {
+    main{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 60px;
+        width: 280px;        
+    }
+    .staff{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;        
+    }
+    .content-staff{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;        
+    }
+    .left-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .background-shape{
+        width: 250px;
+        height: 350px;
+        background-color: #2A5594;
+        border-radius: 20px;          
+    }
+    .background-image{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 250px;
+        height: 350px;
+        background-image: url(./image/background/background-staff.png);
+        background-size: cover;
+        border-radius: 20px;
+        transform: translate(0px, -15px);        
+    }
+    .background-image img{
+        height: 300px;
+        width: 100%;
+        border-radius: 20px;
+    }    
+    .right-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;         
+    }
+    .text-staff{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;                
+    }
+    .motivation{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;                    
+        color: #2C2C2C;        
+    }
+    .about-staff{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;        
+    }
+    .name-staff{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;        
+        color: #2C2C2C;        
+    }
+    .position-staff{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;        
+        color: #2C2C2C;        
+    }
+    span{
+        width: 100%;
+        border: 1px dashed #2A5594;
+    }
+    .description-staff{
+        height: 150px;
+        overflow: auto;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;        
+    }    
+    .description-staff::-webkit-scrollbar{
+        width: 2px;        
+    }
+    .description-staff::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: #b9d9f3; 
+      }
+    .description-staff::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background: #277BC0;
+    }
+    .description-staff::-webkit-scrollbar-thumb:hover{
+        background: #0063b4;
+    }
+
+  }
